@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chotto NFT</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <style>
+    #reward1-header {  display: none;  }
+    #display-value1 {  display: none;  }
+    #redeem-reward1 {  display: none;  }
+
+    #reward2-header {  display: none;  }
+    #display-value2 {  display: none;  }
+    #redeem-reward2 {  display: none;  }
+
+    #reward3-header {  display: none;  }
+    #display-value3 {  display: none;  }
+    #redeem-reward3 {  display: none;  }
+</style>
+</head>
+
+<body>
+  <h1>Chotto NFTs</h1>
+  <!-- Connect to MetaMask and display current address-->
+  <div id="mm-detected"></div>
+  <button id="mm-connect">Connect wallet</button>
+  <div id="mm-current-account"></div>
+  <br/>
+  <br/>
+  <br/>
+  <!-- Reward1 -->
+  <div>
+  <h3 id="reward1-header">Race Tickets</h3>
+  <div id="display-value1">Remaining: 0</div>
+  <button id="redeem-reward1">Redeem </button>
+
+  <!-- Reward2 -->
+  <div>
+  <h3 id="reward2-header">Vinyard Tours</h3>
+  <div id="display-value2">Remaining: 0</div>
+  <button id="redeem-reward2">Redeem </button>
+  <!-- Reward3 -->
+  <div>
+  <h3 id="reward3-header">Rolex</h3>
+  <div id="display-value3">Remaining: 0</div>
+  <button id="redeem-reward3">Redeem </button>
+
+
+
+<script src="dapp.js"></script>
+
+</html>
