@@ -204,6 +204,11 @@ const rewardProgramABI =
 // Using the 'load' event listener for Javascript to
 // check if window.ethereum is available
 
+function NewTab() {
+            window.open(
+              "https://opensea.io", "_blank");
+        }
+
 window.addEventListener('load', function() {
   if (typeof window.ethereum !== 'undefined') {
     console.log('window.ethereum is enabled')
@@ -279,9 +284,6 @@ mmEnable.onclick = async () => {
 	document.getElementById('buy-on-opensea').style.display = "block";
   	}
 	
-	function NewTab() {
-            window.open(
-              "https://opensea.io", "_blank");
-        }
+
 	
 }
