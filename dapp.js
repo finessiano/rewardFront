@@ -273,10 +273,24 @@ mmEnable.onclick = async () => {
 	document.getElementById('reward3-header').style.display = "block";
 	document.getElementById('display-value3').style.display = "block";
 	document.getElementById('redeem-reward3').style.display = "block";
+	  
+	document.getElementById('buy-on-opensea').style.display = "none";
         }
 
   else {
 	document.getElementById('buy-on-opensea').style.display = "block";
+	  
+	document.getElementById('reward1-header').style.display = "none";
+	document.getElementById('display-value1').style.display = "none";
+	document.getElementById('redeem-reward1').style.display = "none";
+	
+	document.getElementById('reward2-header').style.display = "none";
+	document.getElementById('display-value2').style.display = "none";
+	document.getElementById('redeem-reward2').style.display = "none";
+	
+	document.getElementById('reward3-header').style.display = "none";
+	document.getElementById('display-value3').style.display = "none";
+	document.getElementById('redeem-reward3').style.display = "none";
   	}
 }
 
