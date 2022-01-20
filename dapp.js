@@ -279,4 +279,9 @@ mmEnable.onclick = async () => {
 	document.getElementById('buy-on-opensea').style.display = "block";
   	}
 
+	const goToOpenSea = document.getElementById('buy-on-opensea');
+	goToOpenSea.onclick = async () => {
+		var url = "https://opensea.io/";
+		window.open(url, '_blank').focus();
+	}
 }
