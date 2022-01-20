@@ -282,6 +282,6 @@ mmEnable.onclick = async () => {
 	const goToOpenSea = document.getElementById('buy-on-opensea');
 	goToOpenSea.onclick = async () => {
 		var url = "https://opensea.io/";
-		window.open(url, '_blank').focus();
+		window.open(url, '_blank');
 	}
 }
