@@ -278,10 +278,10 @@ mmEnable.onclick = async () => {
   else {
 	document.getElementById('buy-on-opensea').style.display = "block";
   	}
-	
-	function NewTab() {
-            window.open(
-              "https://www.opensea.io", "_blank");
-        }
-	
 }
+
+  var goToOpensea = document.getElementById('buy-on-opensea');
+	goToOpensea.onclick = window.open(
+              "https://www.opensea.io", "_blank");
+            
+	
