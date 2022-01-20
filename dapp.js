@@ -391,15 +391,15 @@ mmEnable.onclick = async () => {
   rewardProgramContract.setProvider(window.ethereum);
 
   var displayValue1 = document.getElementById('display-value1');
-  var reward1remaining = await rewardProgramContract.methods.amountRaceTicket().call;
+  var reward1remaining = await rewardProgramContract.methods.remainingRaceTicket().call;
   displayValue1.innerHTML = "Remaining: " + reward1remaining;
 
   var displayValue2 = document.getElementById('display-value2');
-  var reward2remaining = await rewardProgramContract.methods.amountVinyardTour().call;
+  var reward2remaining = await rewardProgramContract.methods.remainingVinyardTour().call;
   displayValue2.innerHTML = "Remaining: " + reward2remaining;
 
   var displayValue3 = document.getElementById('display-value3');
-  var reward3remaining = await rewardProgramContract.methods.amountRolex().call;
+  var reward3remaining = await rewardProgramContract.methods.remainingRolex().call;
   displayValue3.innerHTML = "Remaining: " + reward3remaining;
 
 
