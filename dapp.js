@@ -1,12 +1,12 @@
 
 
 // contract address on Kovan:
-const rewardProgramAddress = '0x0b4235b5364e88C7168Ac9a0e72808A89C328152'
+const rewardProgramAddress = '0x868450975AB185EE54F10fBe6Ea829a386dC9fa4'
 
 // add contract ABI:
 const rewardProgramABI =
 
-      [
+   [
 	{
 		"inputs": [
 			{
@@ -41,6 +41,12 @@ const rewardProgramABI =
 	{
 		"anonymous": false,
 		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "redeemer",
+				"type": "address"
+			},
 			{
 				"indexed": false,
 				"internalType": "enum RewardManager.Reward",
@@ -117,6 +123,25 @@ const rewardProgramABI =
 				"internalType": "address",
 				"name": "",
 				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_addressToCheck",
+				"type": "address"
+			}
+		],
+		"name": "nftBalanceOf",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
 			}
 		],
 		"stateMutability": "view",
