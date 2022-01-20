@@ -259,7 +259,24 @@ mmEnable.onclick = async () => {
   var displayValue3 = document.getElementById('display-value3');
   var reward3remaining = await rewardProgramContract.methods.remainingRolex().call();
   displayValue3.innerHTML = "Remaining: " + reward3remaining;
+  var nftBalance = await rewardProgramContract.methods.nftBalanceOf(ethereum.selectedAddress).call();
 
+  if (nftBalance > 0) {
+  	document.getElementById('reward1-header').style.display = "block";
+	document.getElementById('display-value1').style.display = "block";
+	document.getElementById('redeem-reward1').style.display = "block";
+	
+	document.getElementById('reward2-header').style.display = "block";
+	document.getElementById('display-value2').style.display = "block";
+	document.getElementById('redeem-reward2').style.display = "block";
+	
+	document.getElementById('reward3-header').style.display = "block";
+	document.getElementById('display-value3').style.display = "block";
+	document.getElementById('redeem-reward3').style.display = "block";
+        }
 
+  else {
+	document.getElementById('buy-on-opensea').style.display = "block";
+  	}
 
 }
