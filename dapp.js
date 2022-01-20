@@ -280,9 +280,5 @@ mmEnable.onclick = async () => {
   	}
 }
 
-function NewTab() {
-            window.open(
-              "https://www.opensea.io", "_blank");
-        }
             
 	
