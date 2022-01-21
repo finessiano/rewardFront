@@ -304,5 +304,25 @@ redeem1.onclick = async () => {
   displayValue1.innerHTML = "Remaining: " + reward1remaining;
 }
 
+const redeem2 = document.getElementById('redeem-reward2');
+redeem2.onclick = async () => {
+  var web3 = new Web3(window.ethereum);
+  const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
+  rewardProgramContract.setProvider(window.ethereum);
+  await rewardProgramContract.methods.redeemReward(1).send({from: ethereum.selectedAddress});
+  var reward2remaining = await rewardProgramContract.methods.remainingVinyardTour().call();
+  displayValue2.innerHTML = "Remaining: " + reward2remaining;
+}
+
+const redeem3 = document.getElementById('redeem-reward3');
+redeem3.onclick = async () => {
+  var web3 = new Web3(window.ethereum);
+  const rewardProgramContract = new web3.eth.Contract(rewardProgramABI, rewardProgramAddress);
+  rewardProgramContract.setProvider(window.ethereum);
+  await rewardProgramContract.methods.redeemReward(2).send({from: ethereum.selectedAddress});
+  var reward3remaining = await rewardProgramContract.methods.remainingRolex().call();
+  displayValue3.innerHTML = "Remaining: " + reward3remaining;
+}
+
             
 	
